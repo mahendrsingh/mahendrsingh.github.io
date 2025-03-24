@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>H AnD S Safety Solutions</title>
+    <link rel="shortcut icon" href="assets/img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/carousel.min.css">
+    <link rel="stylesheet" href="assets/css/hands-style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <style>
+        #nav {
+            margin-left: 40px !important;
+        }
+
+        .cta-six-content {
+            padding-top: 10px;
+            border-top: none !important;
+        }
+
+        .loo {
+            width: 30%;
+        }
+
+        .home-two-provide-item .text {
+            font-size: 13px !important;
+            background-color: #c41928 !important;
+        }
+
+        .home-two-provide-item .home-two-provide-item-text::before {
+            background-color: #c41928 !important;
+        }
+
+        .home-two-provide-item .home-two-provide-item-text::after {
+            background-color: #c41928 !important;
+        }
+
+        @media (min-width: 300px) and (max-width: 767px) {
+            .home-two-provide-item {
+                width: 200px !important;
+            }
+            .product a {
+                display: flow-root;
+            }
+            /*.home-two-provide-item .text {*/
+            /*    font-size:16px!important;*/
+            /*}*/
+        }
+
+        /*.hero-three-item{*/
+
+        /*    background-position: inherit;*/
+
+        /*}*/
+
+        .nvbar {
+            width: 10%;
+        }
+
+        #cssmenu ul li a {
+            font-size: 13px;
+        }
+
+        @media (min-width:300px) and (max-width: 769px) {
+            .nvbar {
+                width: 100%;
+            }
+            a.header-logo img {
+                width: 22% !important;
+            }
+            .mx {
+                max-width: 100% !important;
+                margin-left: 70px !important;
+                margin-right: 70px !important;
+            }
+            .mainhe {
+                font-size: 30px !important;
+            }
+            .home-three-promo-text {
+                top: 80%;
+            }
+            .ron {
+                margin-top: -23px;
+            }
+            .hero-three-title {
+                font-size: 27px;
+            }
+            .hero-three-item {
+                background-position: center bottom;
+            }
+            .hero-three-item {
+                height: 100%;
+            }
+            .home-three-hero {
+                margin-top: 0px !important;
+            }
+            #header-top {
+                display: block;
+            }
+            .button:before {
+                background: #fff;
+            }
+            .button:after {
+                border-top: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+            }
+            #cssmenu {
+                /*background: #fbe152;*/
+            }
+            .button.menu-opened:before {
+                background: #fff;
+            }
+            .button.menu-opened:after {
+                background: #fff;
+            }
+            #nav {
+                margin-left: 0px !important;
+            }
+        }
+
+        .mx {
+            box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
+            border-radius: 10px 10px 10px 10px;
+            /*padding: 65px;*/
+            padding-bottom: 0px;
+            padding-top: 0px;
+            margin: 10px;
+            text-align: center;
+            max-width: 260px;
+            background: white;
+            transition: transform .2s;
+        }
+
+        .mx img:hover {
+            transform: scale(0.9);
+        }
+
+        /*.life{*/
+
+        /*    background:#f5f5f5!important;*/
+
+        /*}*/
+
+        .had {
+            padding-bottom: 50px !important;
+        }
+
+        .mainhe {
+            font-size: 40px;
+        }
+
+        .homee img {
+            border-radius: 50px 500px 50px 150px;
+            box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
+        }
+
+        .brand h2 {
+            padding-bottom: 25px;
+        }
+
+        .navbar-nav a {
+            /*font-family:'Nunito', sans-serif;*/
+            font-weight: 800;
+        }
+
+        .home-three-promo-text {
+            padding: 0px 0px;
+        }
+
+        .faq {
+            background-color: #c41928;
+            border: 1px solid gray;
+            margin: 20px 0;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+            transition: 0.3s ease;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .faq.active {
+            background-color: #000723;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-title {
+            margin: 0 35px 0 0;
+            font-size: 17px;
+        }
+
+        .faq-text {
+            display: none;
+            margin: 30px 0 0;
+        }
+
+        .faq.active .faq-text {
+            display: block;
+        }
+
+        .fa-chevron-down {
+            color: white;
+        }
+
+        .faq-toggle {
+            background-color: transparent;
+            border: 0;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            padding: 0;
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            height: 30px;
+            width: 30px;
+        }
+
+        .faq-toggle .fa-times {
+            display: none;
+        }
+
+        .faq.active .faq-toggle .fa-times {
+            color: #000;
+            display: block;
+        }
+
+        .faq.active .faq-toggle .fa-chevron-down {
+            display: none;
+        }
+
+        .faq.active .faq-toggle {
+            background: gray;
+        }
+
+        .header-five {
+            padding-bottom: 0px;
+        }
+
+        .home-three-hero {
+            margin-top: -100px;
+        }
+
+        #cssmenu ul li a {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ===========================
+            =====>> Home Header Top <<===== -->
+    <header id="header-top" class="header-five">
+        <nav class="navbar navbar-expand-lg top-nav" id="cssmenu">
+            <div class="container navbar-collapse">
+                <div class="logo nvbar">
+                    <a href="index.html" class="header-logo">
+                        <img src="assets/img/handslogo.png" alt="" width="80%">
+                        </a>
+                </div>
+                <div class="button"></div>
+                <ul class="navbar-nav mr-auto" id="nav">
+                    <li><a href="/">Home</a>
+                    </li>
+                    <li><a href="about.html"> About Us</a></li>
+                    <li><a href="safety-ppe.html">Safety PPE</a></li>
+                    <li><a href="consumables.html">Consumables</a></li>
+                    <li><a href="tools.html">Tools & Tackles</a></li>
+                    <li>
+                        <a href="">More Categories</a>
+                        <ul class="ul-nav">
+                            <li><a href="electrical.html">Electrical & Electronics</a></li>
+                            <li><a href="fuses.html">Fuses & Spares</a></li>
+                            <li><a href="instruments.html">Instruments</a></li>
+                            <li><a href="security.html">Security & Fire System</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="clients.html">Clients</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- ===========================
+            =====>>  Hero Three <<===== -->
+    <section class="home-three-hero">
+        <div class="hero-three-slider owl-carousel owl-theme">
+            <div class="hero-three-item hero-bg-three-two bg-com">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 ">
+                            <div class="hero-three-text ">
+                                <h1 class="hero-three-title">Protecting Your Business With Our Expertise.</h1>
+                                <a href="contact.html" class="btn-1 hover-effect">CONTACT NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-three-item hero-bg-three-one bg-com ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 ">
+                            <div class="hero-three-text">
+                                <h1 class="hero-three-title">Stay Safe & Sound With Our Solutions Around!</h1>
+                                <a href="contact.html" class="btn-1 hover-effect">CONTACT NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-three-item hero-bg-three-three bg-com">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 ">
+                            <div class="hero-three-text ">
+                                <h1 class="hero-three-title">Protecting Your Business With Our Expertise.</h1>
+                                <a href="contact.html" class="btn-1 hover-effect">CONTACT NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =====>> End  Hero Two <<===== 
+            =========================== -->
+    <!-- ===========================
+            =====>> Home Two About <<===== -->
+    <section class="home-two-about pt-120 pb-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 ">
+                    <div class="home-two-about-content">
+                        <h2 class="hading-title mainhe">
+                            <span>Your Trust,</span> Our Solution
+                        </h2>
+                        <p class="just">H AnD S Safety Solutions encompass a wide range of products, services, and technologies designed to mitigate risks and prevent accidents, injuries and other adverse events.
+                            <br><br> Our team of experts is committed to providing customized solutions that meet the unique needs of your business, no matter the size or industry. Our goal is to help you create a culture of safety within your organization
+                            and ensure that your employees return home safely after every shift. With our commitment to quality and innovation, you can trust that we will deliver the highest level of safety for your business.
+                        </p>
+                        <br>
+                        <a href="about.html" class="btn-1 hover-effect">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =====>> End Home Two About <<===== 
+            =========================== -->
+    <!---OUR BRANDS-->
+    <section id="hands-details-area" class="pt-80 pb-80 life details-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="section-title text-center brand">
+                        <h2 class="hading-title">Our <span>Brands</span></h2>
+                        <p>A network of industry experts and brands working together for your safety.</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row wow fadeInUp" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                <div class="col-md-3 col-xs-6 mx">
+                    <img src="assets/img/brands/bizlink.png" alt="">
+                </div>
+                <div class="col-md-3 col-xs-6 mx">
+                    <img src="assets/img/brands/elmax.png" alt="">
+                </div>
+                <div class="col-md-3 col-xs-6 mx">
+                    <img src="assets/img/brands/honey1.png" alt="">
+                </div>
+                <div class="col-md-3 col-xs-6 mx">
+                    <img src="assets/img/brands/karam.png" alt="">
+                </div>
+            </div>
+            <div class="row wow fadeInUp" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                <div class="col-md-3 col-xs-6 mx">
+                    <img src="assets/img/brands/udyogi.png" alt="">
+                </div>
+                <div class="col-md-3 col-xs-6 mx">
+                    <img src="assets/img/brands/venuslogo.png" alt="">
+                </div>
+                <div class="col-md-3 col-xs-6 mx">
+                    <img src="assets/img/brands/jyotlogo.png" alt="">
+                </div>
+                <div class="col-md-3 col-xs-6 mx">
+                    <img src="assets/img/brands/vidyutlogo.png" alt="">
+                </div>
+            </div>
+            <div class="row wow fadeInUp" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                <div class="col-md-3 col-xs-6 mx">
+                    <img src="assets/img/brands/alkoplus.png" alt="">
+                </div>
+                <div class="col-md-3 col-xs-6 mx">
+                    <img src="assets/img/brands/frontier2.png" alt="">
+                </div>
+                <div class="col-md-3 col-xs-6 mx">
+                    <img src="assets/img/brands/bosch.png" alt="">
+                </div>
+                <div class="col-md-3 col-xs-6 mx">
+                    <img src="assets/img/brands/taparia.png" alt="">
+                </div>
+            </div>
+            <div class="row wow fadeInUp" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                <div class="col-md-3 col-xs-6 mx">
+                    <img src="assets/img/brands/3m1.png" alt="">
+                </div>
+                <div class="col-md-3 col-xs-6 mx">
+                    <img src="assets/img/brands/raychemlogo.png" alt="">
+                </div>
+                <div class="col-md-3 col-xs-6 mx">
+                    <img src="assets/img/brands/aparlogo.png" alt="">
+                </div>
+                <div class="col-md-3 col-xs-6 mx">
+                    <img src="assets/img/brands/finolex.png" alt="">
+                </div>
+            </div>
+            <div class="row wow fadeInUp" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                <div class="col-md-3 col-xs-6 mx">
+                    <img src="assets/img/brands/polycab.png" alt="">
+                </div>
+                <div class="col-md-3 col-xs-6 mx">
+                    <img src="assets/img/brands/sichem.png" alt="">
+                </div>
+                <div class="col-md-3 col-xs-6 mx">
+                    <img src="assets/img/brands/lapp.png" alt="">
+                </div>
+                <div class="col-md-3 col-xs-6 mx">
+                    <img src="assets/img/brands/anchor.png" alt="">
+                </div>
+            </div>
+            <div class="row wow fadeInUp" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                <div class="col-md-3 col-xs-6 mx">
+                    <img src="assets/img/brands/legrand.png" alt="">
+                </div>
+                <div class="col-md-3 col-xs-6 mx">
+                    <img src="assets/img/brands/lt.png" alt="">
+                </div>
+                <div class="col-md-3 col-xs-6 mx">
+                    <img src="assets/img/brands/indoasian.png" alt="">
+                </div>
+                <div class="col-md-3 col-xs-6 mx">
+                    <img src="assets/img/brands/schneider.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="home-three-promo pt-100 pb-100 home-two-provide jarallax">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="section-title text-center">
+                        <h2 class="hading-title">Our Product Category</h2>
+                        <p>Get the safety solutions you need to protect yourself and your loved ones with our customized safety products tailored to your needs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-3 col-sm-6 align-self-center">
+                    <a href="safety-ppe.html">
+                        <div class="home-three-promo-item wow fadeInUp" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                            <img src="assets/img/safebanner.png" alt="">
+                            <div class="home-three-promo-text">
+                                <h6>SAFETY PPE</h6>
+                                <p>Gear up and cover up, let's keep safety levels up with PPE!</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <a href="consumables.html">
+                        <div class="home-three-promo-item wow fadeInUp" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                            <img src="assets/img/mc4product.png" alt="">
+                            <div class="home-three-promo-text">
+                                <h6>CONSUMABLES</h6>
+                                <p>Stock up on consumables, keep productivity reliable!</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <a href="tools.html">
+                        <div class="home-three-promo-item wow fadeInUp" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                            <img src="assets/img/toolsbanner.png" alt="">
+                            <div class="home-three-promo-text">
+                                <h6>TOOLS & TACKLES</h6>
+                                <p>Equip yourself with the right tools and tackles, safety always wins when caution tackles!</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <a href="electrical.html">
+                        <div class="home-three-promo-item wow fadeInUp" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+                            <img src="assets/img/electbanner.png" alt="">
+                            <div class="home-three-promo-text">
+                                <h6>ELECTRICAL & ELECTRONICS</h6>
+                                <p>Spark up your safety, with Electricals and Electronics!</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <br>
+            <div class="row text-center ron">
+                <div class="col-lg-3 col-sm-6 sidemove">
+                    <a href="fuses.html">
+                        <div class="home-three-promo-item wow fadeInUp" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+                            <img src="assets/img/bannerfuse.png" alt="">
+                            <div class="home-three-promo-text">
+                                <h6>FUSES & SPARES</h6>
+                                <p>Fuse failure is not an option, keep spares for a smooth operation!</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <a href="instruments.html">
+                        <div class="home-three-promo-item wow fadeInUp" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+                            <img src="assets/img/instru/instrumentbanner.png" alt="">
+                            <div class="home-three-promo-text">
+                                <h6>INSTRUMENTS</h6>
+                                <p>Let our instruments lead the way, for precision and accuracy every day!</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <a href="security.html">
+                        <div class="home-three-promo-item wow fadeInUp" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+                            <img src="assets/img/cctvbanner.png" alt="">
+                            <div class="home-three-promo-text">
+                                <h6>SECURITY & FIRE ALARM</h6>
+                                <p>Security and fire alarms, your guardians round the clock!</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="hands-details-area" class="pt-80 pb-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 pb-10">
+                    <div class="section-title text-center">
+                        <h2 class="hading-title">Our <span>FAQ'S</span></h2>
+                        <p>Unlock the Answers You Need with our Comprehensive FAQs. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq active">
+                <h3 class="faq-title">What is the quality of products offered by your company?</h3>
+                <p class="faq-text">We take pride in providing only top-quality products to our customers. Our products undergo rigorous testing to ensure they meet our standards for durability and reliability. Shop with confidence knowing that you are getting the best possible
+                    products from us.</p>
+                <button class="faq-toggle">
+                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-times"></i> 
+                    </button>
+            </div>
+            <div class="faq">
+                <h3 class="faq-title">How do I get started with your safety services and what is the cost?</h3>
+                <p class="faq-text">To get started with our safety services, simply reach out to us and we will guide you through the process. We offer a range of safety services to meet your needs, and our prices vary based on the specific services you require but ensuring
+                    that its affordable.</p>
+                <button class="faq-toggle">
+                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-times"></i>
+                    </button>
+            </div>
+            <div class="faq">
+                <h3 class="faq-title">How often should I have my safety procedures and equipments reviewed and updated?</h3>
+                <p class="faq-text">We recommend reviewing and updating safety procedures and equipment at least once a year, or whenever there are changes in the workplace that could impact safety. Contact us to discuss your specific needs and develop a review schedule.</p>
+                <button class="faq-toggle">
+                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-times"></i>
+                    </button>
+            </div>
+            <div class="faq">
+                <h3 class="faq-title">Can you provide emergency response services in the event of a safety incident?</h3>
+                <p class="faq-text">Yes, our team is trained to respond quickly and effectively to emergency situations, and we have the necessary equipment and expertise to provide the support you need.</p>
+                <button class="faq-toggle">
+                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-times"></i>
+                    </button>
+            </div>
+            <div class="faq">
+                <h3 class="faq-title">Can you customize your safety services to meet my business's unique needs?</h3>
+                <p class="faq-text">Yes, we offer custom safety services to fit your unique business needs.We work with you to identify potential hazards and develop a safety plan that is tailored to your specific requirements.</p>
+                <button class="faq-toggle">
+                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-times"></i>
+                    </button>
+            </div>
+        </div>
+    </section>
+    <!-- ===========================
+            =====>> Quote <<===== -->
+    <section class="quote-four-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-6 col-md-12">
+                    <div class="quote-content">
+                        <h4>Request a Quote</h4>
+                        <form action="enquiry.php" method="post" class="hero-form">
+                            <input type="name" name="name" class="hero-input-box" placeholder="Name" required="">
+                            <input type="email" name="email" class="hero-input-box" placeholder="Email" required="">
+                            <input type="number" name="number" class="hero-input-box" placeholder="Phone" required="">
+                            <input type="message" name="message" class="hero-input-box" placeholder="Write Your Message Here" required="">
+                            <button type="submit" class="btn-4 hover-effect">submit request</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =====>> End Quote <<===== 
+            =========================== -->
+    <!-- ===========================
+            =====>> Cta <<===== -->
+    <div class="cta-six-area pt-60 pb-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="cta-six-content">
+                        <div class="cta-text">
+                            <img src="assets/img/cta.png" alt="">
+                            <h4>Looking for Safety Solutions? Call us now at! <span>725 984 1247</span> </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =====>> End Cta <<===== 
+            =========================== -->
+    <!-- ===========================
+            =====>> Footer <<===== -->
+    <footer id="footer-area" class="bg-black pt-50 pb-50">
+        <div class="container">
+            <div class="footer-widget">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-widget-item mt-40">
+                            <h6 class="footer-widget-title">About Us</h6>
+                            <p>Stay Safe with H AnD S Safety Solutions! Providing affordable, high-quality safety equipment since 2015, our mission is to protect workers in hazardous jobs. Trust us for comprehensive safety coverage! </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget-item mt-40">
+                            <h6 class="footer-widget-title">Our Products</h6>
+                            <ul class="footer-link">
+                                <li><a href="safety-ppe.html"> Safety PPE</a></li>
+                                <li><a href="consumables.html"> Consumables</a></li>
+                                <li><a href="tools.html"> Tools & Tackles</a></li>
+                                <li><a href="electrical.html"> Electrical & Electronics</a></li>
+                                <li><a href="fuses.html"> Fuses & Spares</a></li>
+                                <li><a href="instruments.html"> Instruments</a></li>
+                                <li><a href="security.html"> Security & Fire System</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget-item mt-40">
+                            <h6 class="footer-widget-title">Quick links</h6>
+                            <ul class="footer-link">
+                                <li><a href="index.html"> Home</a></li>
+                                <li><a href="about.html"> About us</a></li>
+                                <li><a href="safety-ppe.html"> Products</a></li>
+                                <li><a href="clients.html"> Clients</a></li>
+                                <li><a href="contact.html"> Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget-item mt-40">
+                            <h6 class="footer-widget-title">Download Brochure</h6>
+                            <ul class="text-left">
+                                <li><a href="assets/brochure/H_AnD_S_Safety_Solutions_Brochure.pdf" download><img src="assets/img/pdfficon.png" width="30%" alt="" ></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- =====>> End Footer <<===== 
+            =========================== -->
+    <!-- ===========================
+            =====>> Copy Right <<===== -->
+    <div id="copy-right-area" class="section-color bg-black pt-30 pb-30">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="cta-text d-flex flex-lg-row flex-column align-items-center justify-content-start">
+                        <div class="text-lg-left text-center dev">
+                            <p>Designed & Developed By - <a href="https://futureinsights.in" target="_blank">Future Insights</a> </p>
+                        </div>
+                        <div class="ml-lg-auto">
+                            <div class="d-flex flex-row align-items-center justify-content-center">
+                                <p>© Copyrights 2025 All rights reserved. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =====>> End Copy Right <<===== 
+            =========================== -->
+    <!-- ===========================
+            =====>> Top Preloader <<===== -->
+    <div id="preloader">
+        <div class="lds-css">
+            <div class="preloader-3">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- =====>> End Top Preloader <<===== 
+            =========================== -->
+    <!-- ===========================
+            =====>> Scroll Top <<===== -->
+    <a href="#" class="scroll-top show" id="scroll-top">
+        <i class="arrow-top fal fa-long-arrow-up"></i>
+        <i class="arrow-bottom fal fa-long-arrow-up"></i>
+        </a>
+    <!-- =====>> End Scroll Top <<===== 
+            =========================== -->
+    <!-- ===========================
+            =====>> Jquery <<===== -->
+    <script>
+        const buttons = document.querySelectorAll(".faq-toggle");
+
+        buttons.forEach((btn) => {
+            btn.addEventListener("click", () => {
+                btn.parentNode.classList.toggle("active");
+            });
+        });
+    </script>
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/carousel.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/parallax.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/counter.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCe2q1gFSd75jKUnTDPq0nZWaMlEu6vL30"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/hands-script.js"></script>
+    <!-- =====>> End Jquery <<===== 
+            =========================== -->
+</body>
+
+</html>
