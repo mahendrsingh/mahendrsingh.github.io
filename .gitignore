@@ -17,7 +17,6 @@ node_modules
 
 # Production
 /build
-/dist
 dist-ssr
 
 # Environment files

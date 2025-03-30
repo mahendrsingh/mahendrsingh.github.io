@@ -99,7 +99,7 @@ const Projects = () => {
             My Projects
           </Typography>
 
-          <Grid container spacing={4}>
+          <Grid container spacing={3}>
             {projects.map((project, index) => (
               <Grid item xs={12} md={6} key={index}>
                 <ProjectCard>

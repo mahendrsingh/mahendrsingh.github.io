@@ -161,7 +161,7 @@ const Blogs = () => {
             <Typography variant="body1" sx={{ mb: 4, color: 'rgba(255, 255, 255, 0.8)' }}>
               Insights, tutorials, and best practices in DevOps, Cloud Computing, and Infrastructure Automation.
             </Typography>
-            <Grid container spacing={4}>
+            <Grid container spacing={3}>
               {blogs.map((blog) => (
                 <Grid item xs={12} md={6} key={blog.id}>
                   <BlogCard>
