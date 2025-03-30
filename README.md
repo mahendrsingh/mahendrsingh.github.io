@@ -21,8 +21,8 @@ This is my personal portfolio website built with React, TypeScript, and Material
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/hereyouare.git
-cd hereyouare
+git clone https://github.com/mahendrsingh/mahendrsingh.github.io.git
+cd mahendrsingh.github.io
 ```
 
 2. Install dependencies:
@@ -39,13 +39,14 @@ npm run dev
 
 ## Deployment
 
-This project is configured for GitHub Pages deployment. To deploy:
+This project is configured for GitHub Pages deployment. The site is automatically deployed to [https://mahendrsingh.github.io](https://mahendrsingh.github.io) whenever changes are pushed to the main branch.
 
+To deploy manually:
 1. Push your changes to GitHub
 2. Go to your repository settings
 3. Navigate to "Pages" section
-4. Select "gh-pages" branch as the source
-5. Your site will be available at `https://yourusername.github.io/hereyouare`
+4. Select "main" branch as the source
+5. Your site will be available at [https://mahendrsingh.github.io](https://mahendrsingh.github.io)
 
 ## Development
 
